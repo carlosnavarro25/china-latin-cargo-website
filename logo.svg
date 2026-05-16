@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-label="China Latin Cargo - Tus aliados latinos en China">
+  <defs>
+    <style>
+      .swoosh-blue { fill: #1E2A78; }
+      .swoosh-red  { fill: #E11D2A; }
+      .china       { fill: #E11D2A; }
+      .latin       { fill: #15213D; }
+      .tagline     { fill: #15213D; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Two dynamic swooshes / wings -->
+  <path class="swoosh-blue" d="M150 420 C 360 260, 620 130, 920 70 C 690 200, 470 320, 270 410 Z"/>
+  <path class="swoosh-red"  d="M310 470 C 500 360, 720 290, 980 260 C 790 340, 600 410, 410 470 Z"/>
+
+  <!-- CHINA -->
+  <text x="540" y="640" text-anchor="middle"
+        font-family="'Arial Black','Helvetica Neue',Impact,sans-serif"
+        font-weight="900" font-size="220"
+        font-stretch="condensed"
+        letter-spacing="-2"
+        class="china"
+        transform="scale(1.15,1) translate(-70,0)">CHINA</text>
+
+  <!-- LATIN CARGO -->
+  <text x="540" y="820" text-anchor="middle"
+        font-family="'Arial Black','Helvetica Neue',Impact,sans-serif"
+        font-weight="900" font-size="200"
+        font-stretch="condensed"
+        letter-spacing="-2"
+        class="latin"
+        transform="scale(1.12,1) translate(-58,0)">LATIN CARGO</text>
+
+  <!-- Tagline -->
+  <text x="540" y="920" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="56" class="tagline">Tus aliados latinos en China</text>
+</svg>
