@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 110" role="img" aria-label="China Latin Cargo - Tus aliados latinos en China">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="China Latin Cargo">
 
-  <!-- Swoosh accent -->
-  <path fill="#1E2A78" d="M8 44 C 36 20, 72 4, 112 0 C 86 16, 60 30, 36 44 Z"/>
-  <path fill="#E11D2A" d="M18 62 C 46 42, 80 28, 118 22 C 92 38, 68 52, 44 62 Z"/>
+  <!-- Swoosh icon (left side, x: 0-106) -->
+  <path fill="#1E2A78" d="M8 42 C 32 12, 68 2, 104 0 C 82 12, 58 24, 34 42 Z"/>
+  <path fill="#E11D2A" d="M16 60 C 40 40, 72 30, 108 28 C 86 40, 64 52, 40 60 Z"/>
 
-  <!-- CHINA -->
-  <text x="134" y="66"
+  <!-- CHINA (right side) -->
+  <text x="118" y="55"
         font-family="'Arial Black','Helvetica Neue',Impact,sans-serif"
-        font-weight="900" font-size="66" fill="#E11D2A"
+        font-weight="900" font-size="52" fill="#E11D2A"
         letter-spacing="-1">CHINA</text>
 
   <!-- LATIN CARGO -->
-  <text x="134" y="108"
+  <text x="118" y="92"
         font-family="'Arial Black','Helvetica Neue',Impact,sans-serif"
-        font-weight="900" font-size="50" fill="#15213D"
+        font-weight="900" font-size="40" fill="#15213D"
         letter-spacing="-0.5">LATIN CARGO</text>
 
 </svg>
