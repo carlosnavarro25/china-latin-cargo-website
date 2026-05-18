@@ -140,12 +140,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .nav-links a { font-weight: 500; font-size: 15px; color: var(--ink-soft); transition: color .2s; }
 .nav-links a:hover { color: var(--red); }
 .nav-cta {
-  background: var(--ink); color: white;
+  background: var(--red); color: white;
   padding: 10px 20px; border-radius: 100px;
   font-weight: 600; font-size: 14px;
   transition: transform .15s, box-shadow .2s;
 }
-.nav-cta:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+.nav-cta:hover { background: var(--red-dark); transform: translateY(-1px); box-shadow: var(--shadow); }
 .nav-toggle { display: none; width: 40px; height: 40px; border-radius: 10px; align-items: center; justify-content: center; }
 .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after {
   content: ''; display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; position: relative;
@@ -225,12 +225,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 /* ============ TRUST BAR ============ */
 .trust {
-  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-  background: var(--bg-soft); padding: 32px 0;
+  background: linear-gradient(135deg, var(--blue) 0%, #0F172A 100%);
+  padding: 48px 0;
 }
 .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
-.trust-grid h4 { font-size: 28px; font-weight: 800; color: var(--red); letter-spacing: -.02em; }
-.trust-grid p { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.trust-grid h4 { font-size: 36px; font-weight: 800; color: #FBBF24; letter-spacing: -.02em; }
+.trust-grid p { font-size: 13px; color: rgba(255,255,255,.7); margin-top: 4px; }
 
 /* ============ SECTIONS ============ */
 section { padding: 100px 0; }
