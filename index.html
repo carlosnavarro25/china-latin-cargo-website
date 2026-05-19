@@ -331,9 +331,9 @@ section { padding: 100px 0; }
 .about-visual .v-content h3 { font-size: 28px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 8px; }
 .about-visual .v-content p { opacity: .95; max-width: 340px; margin: 0 auto; }
 .slider { position: relative; width: 100%; max-width: 560px; background: white; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow-lg); }
-.slider-window { overflow: hidden; }
-.slider-track { display: flex; transition: transform .35s ease; width: 100%; }
-.slider-track img { width: 100%; min-width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: top center; }
+.slider-window { overflow: hidden; width: 100%; }
+.slider-track { display: flex; transition: transform .35s ease; width: max-content; }
+.slider-track img { flex: 0 0 100%; width: 100%; min-width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: top center; }
 .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(17, 24, 39, .1); background: rgba(255,255,255,.95); color: var(--ink); font-size: 24px; display: grid; place-items: center; cursor: pointer; box-shadow: var(--shadow-sm); }
 .slider-btn.prev { left: 16px; }
 .slider-btn.next { right: 16px; }
