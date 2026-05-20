@@ -4,3 +4,8 @@
 !.dev.vars.example
 .env*
 !.env.example
+# macOS
+.DS_Store
+
+# build / dependency folders
+node_modules/
