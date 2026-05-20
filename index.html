@@ -330,10 +330,10 @@ section { padding: 100px 0; }
 .about-visual .v-content { position: relative; text-align: center; padding: 40px; }
 .about-visual .v-content h3 { font-size: 28px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 8px; }
 .about-visual .v-content p { opacity: .95; max-width: 340px; margin: 0 auto; }
-.slider { position: relative; width: 100%; max-width: 560px; background: white; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow-lg); }
+.slider { position: relative; width: 100%; max-width: 720px; background: white; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow-lg); }
 .slider-window { overflow: hidden; width: 100%; }
-.slider-track { display: flex; transition: transform .35s ease; width: max-content; }
-.slider-track img { flex: 0 0 100%; width: 100%; min-width: 100%; height: auto; object-fit: cover; object-position: top center; display: block; }
+.slider-track { display: flex; transition: transform .35s ease; width: max-content; will-change: transform; transform: translateZ(0); }
+.slider-track img { flex: 0 0 100%; width: 100%; min-width: 100%; height: auto; object-fit: cover; object-position: top center; display: block; -webkit-backface-visibility: hidden; backface-visibility: hidden; image-rendering: -webkit-optimize-contrast; }
 .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(17, 24, 39, .1); background: rgba(255,255,255,.95); color: var(--ink); font-size: 24px; display: grid; place-items: center; cursor: pointer; box-shadow: var(--shadow-sm); }
 .slider-btn.prev { left: 16px; }
 .slider-btn.next { right: 16px; }
@@ -669,11 +669,21 @@ section { padding: 100px 0; }
         <button type="button" class="slider-btn prev" aria-label="Imagen anterior">‹</button>
         <div class="slider-window">
           <div class="slider-track">
-            <img src="images/clc1.jpeg" alt="Carga Guangzhou a Panamá 1">
-            <img src="images/clc2.jpeg" alt="Carga Guangzhou a Panamá 2">
-            <img src="images/clc3.jpeg" alt="Carga Guangzhou a Panamá 3">
-            <img src="images/clc4.jpeg" alt="Carga Guangzhou a Panamá 4">
-            <img src="images/clc5.jpeg" alt="Carga Guangzhou a Panamá 5">
+            <picture>
+              <img src="images/clc1.jpeg" srcset="images/clc1-800.jpg 800w, images/clc1.jpeg 1600w" sizes="(max-width: 720px) 100vw, 720px" alt="Carga Guangzhou a Panamá 1">
+            </picture>
+            <picture>
+              <img src="images/clc2.jpeg" srcset="images/clc2-800.jpg 800w, images/clc2.jpeg 1600w" sizes="(max-width: 720px) 100vw, 720px" alt="Carga Guangzhou a Panamá 2">
+            </picture>
+            <picture>
+              <img src="images/clc3.jpeg" srcset="images/clc3-800.jpg 800w, images/clc3.jpeg 1600w" sizes="(max-width: 720px) 100vw, 720px" alt="Carga Guangzhou a Panamá 3">
+            </picture>
+            <picture>
+              <img src="images/clc4.jpeg" srcset="images/clc4-800.jpg 800w, images/clc4.jpeg 1600w" sizes="(max-width: 720px) 100vw, 720px" alt="Carga Guangzhou a Panamá 4">
+            </picture>
+            <picture>
+              <img src="images/clc5.jpeg" srcset="images/clc5-800.jpg 800w, images/clc5.jpeg 1600w" sizes="(max-width: 720px) 100vw, 720px" alt="Carga Guangzhou a Panamá 5">
+            </picture>
           </div>
         </div>
         <button type="button" class="slider-btn next" aria-label="Imagen siguiente">›</button>
